@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Search, ShoppingCart, LogIn, Menu, X } from "lucide-react";
+import { Link } from "react-router";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,9 +11,9 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-4 md:px-6 py-3">
         
         {/* Logo */}
-        <div className="flex items-center gap-2 text-xl font-bold text-white">
+        <Link to="/" className="flex items-center gap-2 text-xl font-bold text-white">
           চর্চা'Merch
-        </div>
+        </Link>
 
         {/* Search Bar (Desktop Only) */}
         <div className="hidden md:flex items-center w-[45%]">
