@@ -1,7 +1,7 @@
-import { HomePage } from "./HomePage";
+import ProductDetails from "../layouts/ProductDetails";
 
 export const Home = () => {
   return (
-    <HomePage></HomePage>
+    <ProductDetails></ProductDetails>
   );
 }
